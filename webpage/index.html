@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>ノート・教材まとめ</title>
+  <title>池田大志</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fuwaimg.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,15 +14,21 @@
 
 <body>
 
-  <header>
+    <header>
     <div class="container wrapper">
 
-      <img src="img/top.jpg" class="heroimg">
+      <img src="img/hokaido.HEIC" class="heroimg">
 
       <div class="inner">
 
-        <h1>ノート・教材まとめ</h1>
-        <!--<p>なんだかいいことあるかもしれない。</p>-->
+        <h1>
+          <span data-lang="ja">池田大志</span>
+          <span data-lang="en" style="display:none;">Taishi Ikeda</span>
+        </h1>
+        <div style="margin-top:10px;">
+          <button id="lang-ja">日本語</button>
+          <button id="lang-en">English</button>
+        </div>
 
       </div>
 
@@ -33,165 +39,95 @@
     <div class="container">
       <div class="row">
 
+        <div class="col-sm-3" id="sidebar">
 
-                <div class="col-12" id="headernav">
-
-                    <nav>
-                      <ul>
-                        <li><a href="#"><i class="fas fa-home"></i></a></li>
-                        <li><a href="#mail"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="#novels">novel</a></li>
-                        <li><a href="#illust">illust</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#link">link</a></li>
-                      </ul>
-                      <input name="submit" type="submit" value="clap!">
-                    </nav>
-
-                  </div>
-
-
-        <div class="col-sm-12">
-          <h2>私について</h2>
-            <a href="https://sites.google.com/view/site-taishi-ikeda-home/home?authuser=0" target="_blank">→私の個人ウェブサイトはここです</a><br>
-
-
-          <p>シンプルでベーシックなデザインです。トップ画像をお好みで変更してご利用ください。<br>
-            cssをいじることで、背景のストライプの色・太さ・角度を変更することもできます。<br>
-            <a href="https://css-stripe-generator.firebaseapp.com/" target="_blank">→CSS STRIPE GENERATOR</a><br>
-            もちろん壁紙画像を貼ってもOK！お好みな感じに仕上げちゃってください。</p>
-
-            <ul class="margin-top">
-              <li><a href="books.html">頒布物一覧ページ</a> - 同人誌の紹介などに。</li>
-              <li><a href="text.html">文章用ページ</a> - 小説作品やレポート報告などに。</li>
-            </ul>
-
-          <div class="update">
-            <h4>update:</h4>
-            <div class="inner">
-              <dl>
-                <dt>2019.11.12</dt>
-                <dd>更新情報をここに記入できます。<br>
-                  改行することもできます。</dd>
-                <dt>2019.11.10</dt>
-                <dd>更新情報が長くなると、下にスクロールするようになります。</dd>
-                <dt>2019.11.05</dt>
-                <dd>また、スクロールバーがデザインの邪魔にならないよう、<br>
-                  cssで見た目をシンプルに整えています。<br>
-                  （IEなど、一部のブラウザでは反映されないかもです）</dd>
-                <dt>2019.11.01</dt>
-                <dd>たくさん更新して、たくさん下にスクロールさせてください。</dd>
-              </dl>
+          <div class="sidebarinner">
+            <nav>
+              <span data-lang="ja">
+              <ul>
+                <li><a href="#Home"><i class="fas fa-home"></i></a></li>
+                <li><a href="./papers.html">論文</a></li>
+                <li><a href="#Talks">講演など</a></li>
+                <li><a href="#Picture">絵</a></li>
+                <li><a href="#Animation">アニメーション</a></li>
+              </ul>
+              </span>
+              <span data-lang="en">
+              <ul>
+                <li><a href="#Home"><i class="fas fa-home"></i></a></li>
+                <li><a href="./papers.html">Papers</a></li>
+                <li><a href="#Talks">Talks</a></li>
+                <li><a href="#Picture">Picture</a></li>
+                <li><a href="#Animation">Animation</a></li>
+              </ul>
+              </span>
+            </nav>
+            <!--
+            <div class="margin-top only-pc">
+              <p>
+              このエリアはスマホから見たとき非表示になります。
+              サイドバーの空きがさみしければワンポイントで画像などいれてもいいかも。
+            </p>
             </div>
-          </div> <!-- end update -->
-        </div>
-
-          <div class="col-12 margin-top">
-            <h2 id="novels">novels</h2>
+             -->
           </div>
 
+        </div> <!-- end col-sm-3 -->
 
-          <div class="col-md-6">
-            <h4>ジャンル名</h4>
-            <ul class="novel-1">
-              <li><a href="text.html">作品名１</a>
-                <span>作品名１の説明</span></li>
-              <li><a href="text.html">作品名２</a>
-                <span>改行すると<br>こんな感じ</span></li>
-              <li><a href="text.html">作品名３</a>
-                <span>説明をspanタグで囲ってください</span></li>
-            </ul>
-
-            <h4>ジャンル名</h4>
-            <p>novel-2クラス指定は説明なし、リストアイテムが複数になると区切り線が勝手に入る仕様です。過去作品などにどうぞ</p>
-            <ul class="novel-2">
-              <li><a href="text.html">作品名１</a></li>
-              <li><a href="text.html">作品名２</a></li>
-              <li><a href="text.html">作品名３</a></li>
-              <li><a href="text.html">作品名４</a></li>
-              <li><a href="text.html">作品名５</a></li>
-            </ul>
-          </div> <!-- end col-md-6 -->
-
-          <div class="col-md-6">
-            <h4>ジャンル名</h4>
-            <p>２カラムにもできます。liにclass="new"を与えるとnewマークがつきます</p>
-            <ul class="novel-1">
-              <li><a href="text.html">作品名１</a>
-                <span>作品名１の説明</span></li>
-              <li><a href="text.html">作品名２</a>
-                <span>作品名２の説明</span></li>
-            </ul>
-
-              <h4>連載</h4>
-              <p>***の連載です。</p>
-              <ul class="novel-2">
-                <li><a href="text.html">序章</a></li>
-                <li><a href="text.html">第一章</a></li>
-                <li><a href="text.html">第二章</a></li>
-                <li><a href="text.html">第三章</a></li>
-                <li class="new"><a href="text.html">外伝</a></li>
-                <li class="new"><a href="text.html">第四章：空のゆくえ</a></li>
+        <div class="col-sm-9">
+          <span data-lang="ja">
+            <h2><href="#Home"></href>私について</a></h2>
+            <p>
+              <ul>
+                <li>名前：池田大志（いけだたいし）</li>
+                <li>e-mail : m.ikeda.taishi_#at#_gmail.com #at#を@に変えてください</li><br>
+                <li>経歴</li>
+                <ul>
+                  <li>2022年9月-現在:Samsung  Device Solutions R&D Japan, Process TCAD Lab</li>
+                  <li>2020年9月-2022年8月:ポスドク (ERC Fellow), Physics Department Sapienza University of Rome, イタリア</li>
+                  <li>2018年6月-2020年8月:ポスドク (ERC Fellow), CENTRA, Instituto Superior Tecnico, Universidade de Lisboa (University of Lisbon), ポルトガル</li>
+                  <li>2018年4月-2018年6月:ポスドク 名古屋大学理学研究科</li>
+                  <li>2018年3月 名古屋大学理学研究科素粒子宇宙物理学専攻　博士課程修了</li>          
+                </ul>
+                <li>研究分野、仕事内容
+                </li>
+                <ul>
+                  <li>重力理論、数値相対論、ブラックホール物理、修正重力理論、半導体プロセスに関するシミュレーション</li>
+                </ul>
               </ul>
-            </div> <!-- end col-md-6 -->
-
-            <div class="col-12 margin-top">
-              <h2 id="illust">illust</h2>
-              <p>サムネイル画像は、100px平方より大きいものを使ってください。css側で100pxに切り抜いて表示されます。画像表示には<a href="https://do.gt-gt.org/product/fuwaimg/" target="_blank">fuwaimg</a>を使っています。liにclass="new"を与えるとnewマークがつきます。</p>
-              <ul class="illust">
-                <li><a href="./img/01.jpg" data-fimg="illust" data-fcaption="ここに説明" class="fuwaimg"><img src="./img/01-s.jpg"></a></li>
-                <li><a href="./img/02.jpg" data-fimg="illust" data-fcaption="ここに説明" class="fuwaimg"><img src="./img/02-s.jpg"></a></li>
-                <li class="new"><a href="./img/03.jpg" data-fimg="illust" data-fcaption="ここに説明" class="fuwaimg"><img src="./img/03-s.jpg"></a></li>
+            </p>
+          </span>
+          <span data-lang="en">
+            <h2>About me</h2>
+            <p>
+              <ul>
+                <li>Name: Taishi Ikeda(池田大志)</li>
+                <li>e-mail:m.ikeda.taishi_#at#_gmail.com (Please replace #at# with @)</li>
+                <li>Career:</li>
+                <ul>
+                  <li>Sep. 2022-Present: Samsung  Device Solutions R&D Japan, Process TCAD Lab</li>
+                  <li>Sep. 2020-Aug. 2022: Postdoctoral Researcher (ERC Fellow), Physics Department Sapienza University of Rome, Italy</li>
+                  <li>Jun. 2018-Aug. 2020:Postdoctoral Researcher (ERC Fellow), CENTRA, Instituto Superior Tecnico, Universidade de Lisboa (University of Lisbon), Portugal</li>
+                  <li>Apr. 2018-Jun. 2018: Postdoctoral Researcher, Graduate School of Science, Nagoya University, Japan</li>
+                  <li>Mar. 2018: Ph.D. in Physics, Graduate School of Science, Nagoya University, Japan</li>
+                </ul>
+                <li>Research interest</li>
+                <ul>
+                  <li>General relativity, numerical relativity, Black hole physics, Modified Gravity</li>
+                </ul>
               </ul>
-            </div> <!-- end col-12 -->
-
-            <div class="col-12 margin-top">
-              <h2 id="about">このサイトについて</h2>
-              <p>このサイトはこんなサイトです。<br>
-              空にうたえば（http://xxx.xxx.jp/）<br>
-              バナー<br>
-              <img src="./img/bn-l.jpg"><img src="./img/bn-m.jpg"><img src="./img/bn-s.jpg"></p>
-            </div> <!-- end col-12 -->
-
-            <div class="col-12 margin-top">
-              <h2 id="link">link</h2>
-              <p>大好きなサイトさんです。</p>
-              <ul class="link01">
-                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
-                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
-                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
-                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
-                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
-                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
-              </ul>
-
-              <h3>素材サイトさま</h3>
-              <ul class="link02">
-                <li><a href="https://www.skyseeker.net/" target="_blank">sky seeker</a></li>
-                <li><a href="https://css-stripe-generator.firebaseapp.com/">CSS STRIPE GENERATOR</a></li>
-                <li><a href="#" target="_blank">＊＊＊</a></li>
-                <li><a href="#" target="_blank">＊＊＊</a></li>
-              </ul>
-            </div> <!-- end col-12 -->
-
-            <div class="col-12 margin-top">
-              <h2 id="mail">mail</h2>
-              <p class="margin-bottom">このままでは機能しませんので、<a href="https://www.php-factory.net/" target="_blank">PHP工房様</a>の「Mailform01」などをご利用ください。</p>
-              <form method="post" action="ここにアクション" class="mailform">
-              <input type="text" name="message" placeholder="感想が活力になります">
-              <input type="submit" value="送信する">
-              </form>
-
-              <h3 class="margin-top">テキストエリアつきメールフォーム</h3>
-              <form method="post" action="ここにアクション" class="mailform">
-              <textarea rows="5" name="message" placeholder="感想が活力になります"></textarea>
-              <input type="submit" value="送信する">
-              </form>
-            </div>
+          </p>
+        </span>
+          </div> <!-- end row -->
+        </div> <!-- end col-sm-9 右側のカラムはここで終わりです -->
 
       </div> <!-- end row -->
 
     </div> <!-- end container -->
+
+
+
+
   </main>
 
   <footer>
@@ -199,6 +135,21 @@
       <p class="template"><a href="https://do.gt-gt.org/" target="_blank">template by do.</a></p>
     </div>
   </footer>
+
+<script src="js/scrollbooster.min.js"></script>
+<script src="js/fuwaimg.js"></script>
+<script>
+  const defaultLang = "en";
+  //言語切り替え
+  document.getElementById('lang-ja').onclick = function() {
+    document.querySelectorAll('[data-lang="ja"]').forEach(e => e.style.display = '');
+    document.querySelectorAll('[data-lang="en"]').forEach(e => e.style.display = 'none');
+  };
+  document.getElementById('lang-en').onclick = function() {
+    document.querySelectorAll('[data-lang="ja"]').forEach(e => e.style.display = 'none');
+    document.querySelectorAll('[data-lang="en"]').forEach(e => e.style.display = '');
+  };
+</script>
 
 <script src="js/scrollbooster.min.js"></script>
 <script src="js/fuwaimg.js"></script>
