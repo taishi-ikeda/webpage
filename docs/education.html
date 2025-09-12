@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>池田大志</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fuwaimg.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+    <div class="container wrapper">
+
+      <img src="img/hokaido.HEIC" class="heroimg">
+
+      <div class="inner">
+
+        <h1>
+          <span data-lang="ja">池田大志</span>
+          <span data-lang="en" style="display:none;">Taishi Ikeda</span>
+        </h1>
+        <div style="margin-top:10px;">
+          <button id="lang-ja">日本語</button>
+          <button id="lang-en">English</button>
+        </div>
+
+      </div>
+
+    </div> <!-- end container -->
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-3" id="sidebar">
+
+          <div class="sidebarinner">
+            <nav>
+              <span data-lang="ja">
+              <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="./papers.html">論文</a></li>
+                <li><a href="./talks.html">講演など</a></li>
+                <li><a href="./picture.html">絵</a></li>
+                <li><a href="./animation">アニメーション</a></li>
+              </ul>
+              </span>
+              <span data-lang="en">
+              <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="./papers.html">Papers</a></li>
+                <li><a href="./talks.html">Talks</a></li>
+                <li><a href="./picture.html">Picture</a></li>
+                <li><a href="./animation">Animation</a></li>
+              </ul>
+              </span>
+            </nav>
+            <!--
+            <div class="margin-top only-pc">
+              <p>
+              このエリアはスマホから見たとき非表示になります。
+              サイドバーの空きがさみしければワンポイントで画像などいれてもいいかも。
+            </p>
+            </div>
+             -->
+          </div>
+
+        </div> <!-- end col-sm-3 -->
+
+        <div class="col-sm-9">
+            <span data-lang="ja">
+            <h2>ノート・教材</h2>
+            </span>
+            <span data-lang="en">
+            <h2>Note, Education materials</h2>
+            </span>
+             <span data-lang="#ja">
+                  個人的なノートや教材用に教科書等をまとめて作成したノートをあげています。
+                <ol>
+                  <li>
+                        最大公約数のアルゴリズムについてのノート<a href="./EducationMaterial/greatest_common_denominator/doc.pdf">note</a>
+                        <a href="https://github.com/taishi-ikeda/Python-Sample-Code">code</a>
+                  </li>
+                  <li>
+                        ソートのアルゴリズムについてのノート<a href="./EducationMaterial/sort/doc.pdf">note</a>
+                        <a href="https://github.com/taishi-ikeda/Python-Sample-Code">code</a>
+                  </li>
+                </ol>
+            </span>
+          </div> <!-- end row -->
+        </div> <!-- end col-sm-9 右側のカラムはここで終わりです -->
+
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+
+
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="template"><a href="https://do.gt-gt.org/" target="_blank">template by do.</a></p>
+    </div>
+  </footer>
+
+<script src="js/scrollbooster.min.js"></script>
+<script src="js/fuwaimg.js"></script>
+<script>
+  const defaultLang = "en";
+  //言語切り替え
+  document.getElementById('lang-ja').onclick = function() {
+    document.querySelectorAll('[data-lang="ja"]').forEach(e => e.style.display = '');
+    document.querySelectorAll('[data-lang="en"]').forEach(e => e.style.display = 'none');
+  };
+  document.getElementById('lang-en').onclick = function() {
+    document.querySelectorAll('[data-lang="ja"]').forEach(e => e.style.display = 'none');
+    document.querySelectorAll('[data-lang="en"]').forEach(e => e.style.display = '');
+  };
+
+    window.onload = function() {
+    if (defaultLang === "en") {
+      document.querySelectorAll('[data-lang="ja"]').forEach(e => e.style.display = 'none');
+      document.querySelectorAll('[data-lang="en"]').forEach(e => e.style.display = '');
+    } else {
+      document.querySelectorAll('[data-lang="ja"]').forEach(e => e.style.display = '');
+      document.querySelectorAll('[data-lang="en"]').forEach(e => e.style.display = 'none');
+    }
+  };
+</script>
+
+<script src="js/scrollbooster.min.js"></script>
+<script src="js/fuwaimg.js"></script>
+</body>
+
+</html>
